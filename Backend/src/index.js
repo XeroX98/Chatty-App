@@ -19,8 +19,8 @@ const __dirname = path.resolve();
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(express.json({ limit: '50mb' })); // Parse JSON payloads with a size limit of 50MB
-app.use(express.urlencoded({ limit: '50mb', extended: true })); // Parse URL-encoded data with a size limit of 50MB
+//app.use(express.json({ limit: '50mb' })); // Parse JSON payloads with a size limit of 50MB
+//app.use(express.urlencoded({ limit: '50mb', extended: true })); // Parse URL-encoded data with a size limit of 50MB
 
 app.use(
   cors({
